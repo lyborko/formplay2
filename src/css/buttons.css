@@ -1,0 +1,49 @@
+.button-separator {
+  width: 4px;
+  height: 30px;
+  background-color: red;
+}
+
+.toolbutton {
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  button-A4 {
+    background-image: url("../images/A4.png");
+  }
+}
+
+.button-A4 {
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/A4.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .button-A5-landscape {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/A5-landscape.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .button-picture {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/Picture.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .button-textarea {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/textarea.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }

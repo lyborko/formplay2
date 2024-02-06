@@ -1,0 +1,185 @@
+/*html {
+    height: 100%;
+    /*overflow: hidden; //http://stackoverflow.com/questions/12989931/body-height-100-displaying-vertical-scrollbar*/
+/*    margin:0;
+    /*padding: 0;*/
+/*http://stackoverflow.com/questions/18473701/why-is-html-bodyheight100-causing-a-scroll-bar-to-appear*/
+/* }*/
+
+/* body {
+    margin:0;
+    /*padding: 0;*/
+/*  min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: lightgrey;
+  } */
+
+#FormDesigner {
+  margin: 0;
+  padding: 0;
+  min-height: 500px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  background-color: rgb(117, 83, 83);
+}
+
+#dl_header {
+  /*background-color:black;*/
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* Standard syntax (must be last) */
+  color: white;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  height: 60px;
+  padding: 5px;
+}
+#dl_middle {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  flex: 1;
+  /*height: 300px;*/
+  padding: 2px;
+  background-color: #ff9045;
+}
+
+#dl_center {
+  position: relative;
+  background-color: #2e2e2e;
+  width: 100%;
+  padding: 5px;
+}
+
+#dl_footer {
+  background-color: Red;
+  color: white;
+  flex: none;
+  height: 30px;
+  padding: 10px;
+}
+
+#dl_nav-left {
+  background-color: #eeeeee;
+  width: 100px;
+  padding: 5px;
+}
+
+#dl_section {
+  flex: 1;
+  padding: 10px;
+  background-color: #ff9045;
+  overflow: auto;
+  padding: 10px;
+}
+
+#dl_nav-right {
+  background-color: #eeeeee;
+  width: 80px;
+  padding: 5px;
+}
+
+#dl_properties {
+  /*background-color:black;*/
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    -90deg,
+    black,
+    #333
+  ); /* Standard syntax (must be last) */
+  color: white;
+  text-align: center;
+  flex: none;
+  height: 60px;
+  padding: 5px;
+}
+
+div.base {
+    flex: none;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 100px;
+    margin: 2px;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    position: relative;
+}
+
+div.dl_checker {
+  background: whitesmoke; /* For browsers that do not support gradients */
+  color: silver;
+}
+div.dl_checker:hover {
+  /*background-color:black;*/
+  background: silver; /* For browsers that do not support gradients */
+  color: black;
+}
+div.dl_checker_checked {
+  background: grey; /* For browsers that do not support gradients */
+  color: black;
+}
+
+div.dl_checker_unchecked {
+  background:white; /* For browsers that do not support gradients */
+  color: black;
+}
+
+
+div.texter{
+  position: absolute;
+}
+
+#test {
+    left: 120px;
+    top: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    position: relative;
+    border: 5px solid white
+  }

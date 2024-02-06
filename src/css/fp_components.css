@@ -1,0 +1,10 @@
+.A4-portrait {
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 794px;
+    height: 1123px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
