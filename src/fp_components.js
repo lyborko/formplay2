@@ -25,8 +25,6 @@ export function A4Landscape({children}){
     <div className="A4-landscape ">
     {children}
     </div>
-    
-
   )
 }
 
