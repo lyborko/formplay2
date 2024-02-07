@@ -1,9 +1,10 @@
 import './css/design_layout.css';
 import './css/buttons.css';
 import './css/WorkBench.css';
-import A4Portrait from './fp_components.js';
+import {A4Portrait,  StaticText, StaticText2 } from './fp_components.js';
 import {A4Landscape} from './fp_components.js';
 import {Stamp} from './stamp.js';
+import {Fragment} from 'react';
 
 function ToolButton(props){
   return(
@@ -46,7 +47,10 @@ function WorkBench() {
       <UpperToolBar>
         
       </UpperToolBar>
-      <A4Landscape /> 
+      <A4Landscape>
+      <StaticText left={0} top={0} text={<Fragment>This is an <strong>HTML</strong> string.</Fragment>} /> 
+      <StaticText left={0} top={10} text={<Fragment>This is an <strong>HTML</strong> string.</Fragment>} /> 
+      </A4Landscape> 
     </div>
     </>
   );

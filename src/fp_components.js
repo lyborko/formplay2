@@ -8,11 +8,25 @@ function A4Portrait(){
   )
 }
 
-export function A4Landscape(){
+export function StaticText(props) {
+  return (
+    <div style={{ position: "absolute", top: props.top, left: props.left }}>{props.text}</div>
+  )
+}
+
+export function StaticText2(props, {children}) {
+  return (
+    <div style={{ position: "absolute", top: props.top, left: props.left }}>{children}</div>
+  )
+}
+
+export function A4Landscape({children}){
   return(
     <div className="A4-landscape ">
-    landscape
+    {children}
     </div>
+    
+
   )
 }
 
