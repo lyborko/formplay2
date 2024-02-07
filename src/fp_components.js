@@ -8,4 +8,12 @@ function A4Portrait(){
   )
 }
 
+export function A4Landscape(){
+  return(
+    <div className="A4-landscape ">
+    landscape
+    </div>
+  )
+}
+
 export default A4Portrait;
