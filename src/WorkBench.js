@@ -5,6 +5,10 @@ import {A4Portrait,  StaticText, StaticText2 } from './fp_components.js';
 import {A4Landscape} from './fp_components.js';
 import {Stamp} from './stamp.js';
 import {Fragment} from 'react';
+import { PDFViewer } from '@react-pdf/renderer';
+import {MyDocument} from './pdfpage.js';
+import ReactPDF from '@react-pdf/renderer';
+
 
 function ToolButton(props){
   return(
@@ -33,9 +37,17 @@ function UpperToolBar(){
   )
 } */
 
+function savepdfdoc(){
+  window.alert('cd');
+  ReactPDF.render(<MyDocument />, `C:/Users/kiss/Documents/VSC/formplay2/xexample.pdf`);
+}
+
 function WorkBench() {
   return (
     <>
+  {/*   <PDFViewer>
+        <MyDocument />
+    </PDFViewer> */}
     <Stamp width={550} 
            height={250} 
            ACode={"A43957005"} 
@@ -47,9 +59,11 @@ function WorkBench() {
       <UpperToolBar>
         
       </UpperToolBar>
+      
       <A4Landscape>
-      <StaticText left={0} top={0} text={<Fragment>This is an <strong>HTML</strong> string.</Fragment>} /> 
-      <StaticText left={0} top={10} text={<Fragment>This is an <strong>HTML</strong> string.</Fragment>} /> 
+      <button onClick={savepdfdoc}>save</button>
+      <StaticText left={0} top={30} text={<Fragment>This is an <strong>HTML</strong> string.</Fragment>} /> 
+      <StaticText left={0} top={50} text={<Fragment>This is an <strong>HTML</strong> string.</Fragment>} /> 
       </A4Landscape> 
     </div>
     </>
