@@ -10,13 +10,13 @@ function A4Portrait(){
 
 export function StaticText(props) {
   return (
-    <div style={{ position: "absolute", top: props.top, left: props.left }}>{props.text}</div>
+    <div style={{ position: "absolute", left: props.left, top: props.top}}>{props.text}</div>
   )
 }
 
 export function StaticText2(props, {children}) {
   return (
-    <div style={{ position: "absolute", top: props.top, left: props.left }}>{children}</div>
+    <div style={{ position: "absolute", left: props.left , top: props.top }}>{children}</div>
   )
 }
 
